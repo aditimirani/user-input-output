@@ -1,8 +1,15 @@
 import React from 'react'
  const UserOutput = (props) => {
+    const pstyle = {
+        fontWeight: 'bold'
+     }
+     const spanStyle ={
+        textTransform: 'capitalize'
+     }
+
     return(
         <React.Fragment>
-            <p>my name is {props.name}</p>
+            <p style={pstyle}>My name is : <span style={spanStyle}>{props.name}</span></p>
         </React.Fragment>
     )
 }
